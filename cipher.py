@@ -27,9 +27,9 @@ def decode (text,shift):
                 
             
             # Will encrypt uppercase 
-            
+            #Shift value must be different if the letter is upper or lower case 
         elif char.isupper():
-            shift = 1
+            shift = 1 
             result += chr((ord(char) - shift - 65) % 26 + 65)
         else:
             shift = -1
